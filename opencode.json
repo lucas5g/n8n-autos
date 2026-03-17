@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "n8n-mcp": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "sh",
+        "-c",
+        "set -a; . /home/lucas/projects/n8n-auto/.env; export MCP_MODE=stdio LOG_LEVEL=error DISABLE_CONSOLE_OUTPUT=true; exec npx -y n8n-mcp"
+      ]
+    }
+  }
+}
